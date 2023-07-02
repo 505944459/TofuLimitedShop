@@ -1,0 +1,11 @@
+name: TofuLimitedShop
+version: '${project.version}'
+main: cn.ricetofu.tofulimitedshop.TofuLimitedShop
+depend:
+  - Vault
+softdepend:
+  - PlayerPoints
+commands:
+  "lshop":
+    description: 玩家默认指令,打开一个商店GUI窗口
+    usage: /lshop

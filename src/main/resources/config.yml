@@ -1,0 +1,17 @@
+# TofuLimitedShop V1.0
+# 豆腐专卖店主配置文件
+# 配置商品请在 ./config 文件下新建或修改
+
+# 插件的版本标识
+version: 1.0
+# 是否开启更新检查
+update-check: true
+
+# 货币别名,这个会展示在商品的lore里面
+vault-alias: §6金币    # Vault经济插件的货币别名
+points-alias: §3点券   # PlayerPoints经济插件的货币别名
+
+# 是否开启定期保存玩家数据(不开启则只会再玩家退出或者服务器关闭时保存,服务器崩溃可能导致数据丢失)
+# 开启会影响一丁点服务器性能
+auto-save: true # 是否开启
+auto-save-timer: 60 # 周期,单位为分钟,推荐为60分钟
