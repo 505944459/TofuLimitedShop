@@ -1,0 +1,41 @@
+#
+# V1.0 商品配置文件参考
+# 目前最多支持28个出售和28个收购物品
+#
+
+apple:  # 该商品的唯一id,可以为任意字符串,但是不能重复
+  name: 新鲜苹果 * 16 # 商品的展示名
+  details: # 商品的展示lore描述
+    - 新鲜出炉的苹果咯~
+  type: sell # 类型sell类型是指的商店向玩家出售,而buy类型是指的商店向玩家收购
+  limit: 3 # 限制的购买/出售件数
+  refresh: daily # 商品限购次数刷新的周期: daily: 每天刷新 weekly: 每周刷新 monthly: 每月刷新 once: 一次性,永不刷新
+  item: apple # 商品的id,请尽量使用英文id而非数字id
+  amount: 16 # 商品单次出售/收购的数量,请于limit属性区分一下
+  money-type: vault # 该商品的货币类型
+  money: 50 # 需要花费的货币的数量(可以为小数)，注意，points的货币类型这个值只能使用整数
+
+stone:
+  name: 智商检测石
+  details:
+    - 可以检测出你的智商值
+    - 据说非常有效
+  type: sell
+  limit: 1
+  refresh: once
+  item: stone
+  amount: 1
+  money-type: vault
+  money: 250
+
+diamond:
+  name: 钻石 * 16
+  details:
+    - 少年，挖矿吧！
+  type: buy
+  limit: 16
+  refresh: daily
+  item: diamond
+  amount: 1
+  money-type: vault
+  money: 50
